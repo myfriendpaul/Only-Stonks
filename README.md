@@ -1,5 +1,5 @@
 # Project Overview
-
+Access MarketView API and display stock exchange data
 
 ## Project Name
 
@@ -13,8 +13,8 @@ User is able to search different companies traded on the NYSE and add different 
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 
-`
 
+https://marketstack.com/
 
     "data": [
         {
@@ -31,7 +31,7 @@ Specify the API you are using and include a link. Show us a snippet of JSON retu
             "split_factor": 1.0,
             "symbol": "AAPL",
             "exchange": "XNAS",
-            "date": "2021-07-29T00:00:00+0000" `
+            "date": "2021-07-29T00:00:00+0000" 
 
 ## Wireframes
 
