@@ -1,16 +1,37 @@
 # Project Overview
 
-## TickTrack
 
-The name of your project with deployed URL.
+## Project Name
+
+OnlyStonks
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+User is able to search different companies traded on the NYSE and add different tickers to a favorites list. Information displayed will include opening/closing price, trading volume, chart(static for MVP, dynamic for PostMVP). Will also display live scrolling ticker tape. 
 
 ## API and Data Sample
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+
+`
+
+
+    "data": [
+        {
+            "open": 144.685,
+            "high": 146.47,
+            "low": 144.58,
+            "close": 145.64,
+            "volume": 52800323.0,
+            "adj_high": null,
+            "adj_low": null,
+            "adj_close": 145.64,
+            "adj_open": null,
+            "adj_volume": null,
+            "split_factor": 1.0,
+            "symbol": "AAPL",
+            "exchange": "XNAS",
+            "date": "2021-07-29T00:00:00+0000" `
 
 ## Wireframes
 
