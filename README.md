@@ -1,5 +1,5 @@
 # Project Overview
-Access MarketView API and display stock exchange data
+
 
 ## Project Name
 
@@ -7,11 +7,11 @@ OnlyStonks
 
 ## Project Description
 
-User is able to search different companies traded on the NYSE and add different tickers to a favorites list. Information displayed will include opening/closing price, trading volume, chart(static for MVP, dynamic for PostMVP). Will also display live scrolling ticker tape. 
+User is able to search different companies traded on the stock exchange and add different tickers to a favorites list. Information displayed will include opening/closing price, trading volume, historical chart. 
 
 ## API and Data Sample
 
-https://marketstack.com/
+[Market Stack](https://marketstack.com/)
 
     "data": [
         {
@@ -34,34 +34,32 @@ https://marketstack.com/
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Search form allows user to search for different stocks using ticker
+- Display chosen stock data (high, low, EOD price, etc...)
+- Display static historical chart using Chart.js or d3js
+- Scrolling ticker tape on top above navbar
+- Favorite page that allows user to save tickers 
+- Remove current search when next search is input
+- Styled with CSS
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Dynamic intradray chart
+- "Todays top gainers/losers" on sidebar 
+- Use second API to get and display financial news related to stock
+
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
-|August 3| Pseudocode / actual code | Incomplete
+|August 2| Project Approval / Core Application Structure (HTML and CSS| Incomplete
+|August 3| Pseudocode / Learn Chart.js or D3js / Code | Incomplete
 |August 4| Initial Clickable Model  | Incomplete
 |August 5| MVP | Incomplete
 |August 6| Presentations | Incomplete
@@ -72,15 +70,21 @@ Include a full list of features that have been prioritized based on the `Time an
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Finding workable API | H | 3hrs| 2hrs | 2hrs |
+| HTML Coded | H | 3hrs| hrs | hrs |
+| Form and Event listeners | H | 3hrs| hrs | hrs |
+| Create cards  | H | 3hrs| hrs | hrs |
+| Favorites Page | H | 6hrs| hrs | hrs |
+| Create Graphs | H | 6hrs| hrs | hrs |
+| Ticker Tape Scroll | L | 3hrs| hrs | hrs |
+| Remove previous search | H | 1hrs| hrs | hrs |
+| Style and CSS | H | 8hrs| hrs | hrs |
+
+
+| Total |  | 36hrs| 2hrs | hrs |
 
 ## Code Snippet
 
