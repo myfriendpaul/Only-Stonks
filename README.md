@@ -65,8 +65,7 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
-
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+[Priority Matrix(https://github.com/myfriendpaul/ticker-tracker/blob/main/Priority%20Matrix%20Template%20(7).jpg)
 
 ## Timeframes
 
