@@ -32,7 +32,7 @@ User is able to search different companies traded on the stock exchange and add 
 
 ## Wireframes
 
-[Mobile wireframe](https://github.com/myfriendpaul/ticker-tracker/blob/main/Wireframing%20Template%20(5).jpg)
+![Mobile wireframe](https://github.com/myfriendpaul/ticker-tracker/blob/main/Wireframing%20Template%20(5).jpg)
 
 
 #### MVP 
@@ -65,7 +65,7 @@ User is able to search different companies traded on the stock exchange and add 
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
-[Priority Matrix](https://github.com/myfriendpaul/ticker-tracker/blob/main/Priority%20Matrix%20Template%20(7).jpg)
+![Priority Matrix](https://github.com/myfriendpaul/ticker-tracker/blob/main/Priority%20Matrix%20Template%20(7).jpg)
 
 ## Timeframes
 
