@@ -32,7 +32,7 @@ User is able to search different companies traded on the stock exchange and add 
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[Mobile wireframe](https://github.com/myfriendpaul/ticker-tracker/blob/main/Wireframing%20Template%20(5).jpg)
 
 
 #### MVP 
