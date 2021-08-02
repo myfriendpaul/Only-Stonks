@@ -60,8 +60,8 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 |July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |August 2| Project Approval / Core Application Structure (HTML and CSS| Incomplete
 |August 3| Pseudocode / Learn Chart.js or D3js / Code | Incomplete
-|August 4| Initial Clickable Model  | Incomplete
-|August 5| MVP | Incomplete
+|August 4| Initial Clickable Model /  Code  | Incomplete
+|August 5| MVP / Post MVP | Incomplete
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
