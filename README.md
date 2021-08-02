@@ -65,7 +65,7 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
-[Priority Matrix(https://github.com/myfriendpaul/ticker-tracker/blob/main/Priority%20Matrix%20Template%20(7).jpg)
+[Priority Matrix](https://github.com/myfriendpaul/ticker-tracker/blob/main/Priority%20Matrix%20Template%20(7).jpg)
 
 ## Timeframes
 
