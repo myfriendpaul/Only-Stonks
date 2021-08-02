@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'gothamlight';
+  src: url('fonts/gotham_light_regular-webfont.woff2') format('woff2'),
+       url('fonts/gotham_light_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Marguerite1';
+  src:url('fonts/Marguerite1.ttf.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  max-width: auto;
+  background-color: #28464B;
+}
+
+ul{
+  list-style: none;
+}
+
+.nav-title{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.only-title {
+  font-family: gotham;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.stonks-title{
+  font-family: marguerite1;
+  padding: 3px 0 0 0;
+  font-weight: 400;
+  font-size: 25px;
+  color: #931621
+}
+
+.nav-links {
+  flex-flow: row-wrap;
+}
