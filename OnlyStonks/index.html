@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://use.fontawesome.com/e7d684a423.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script defer src="app.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -20,14 +20,14 @@
 <body>
 
   <nav>
-    <div class="nav-title">
-      <h4 class="only-title">Only</h4>
-      <h4 class="stonks-title">Stonks</h4>
+    <div id="nav-title">
+      <h4 id="only-title">Only</h4>
+      <h4 id="stonks-title">Stonks</h4>
     </div>
 
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Search</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#search">Search</a></li>
       <li><a href="#">My Stonks</a></li>
     </ul>
 
@@ -84,21 +84,25 @@
   </div>
   <!-- TradingView Widget END -->
 
-  <div class="background">
+  <div id="home">
     <img src="images/stock-chart.jpeg">
   </div>
 
   <main>
     <form>
       <div class="wrapper">
-        <input type="search" id="search" placeholder="Search for stonks, ex: TSLA, AMZN, GME" type="text">
-        <button id="search-button" type="submit">Search</button>
+        <input type="search" id="search" placeholder="Search for stonks" type="text">
+        <button id="search-button" type="submit">Search<button>
       </div>
     </form>
-    <section>
+    <section id="stonkresults" class="stonk-results">
+      <div>
+        <canvas id="chart"></canvas>
+      </div>
     </section>
   </main>
   <script src="navscript.js"></script>
+  <script src="chart.js"></script>
 </body>
 
 </html>
