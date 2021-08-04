@@ -36,53 +36,55 @@
       <div class="line2"></div>
       <div class="line3"></div>
     </div>
-  </nav>
 
-  <!-- TradingView Widget BEGIN -->
-  <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-      async>
-        {
-          "symbols": [
-            {
-              "proName": "FOREXCOM:SPXUSD",
-              "title": "S&P 500"
-            },
-            {
-              "proName": "FOREXCOM:NSXUSD",
-              "title": "Nasdaq 100"
-            },
-            {
-              "proName": "BITSTAMP:BTCUSD",
-              "title": "BTC/USD"
-            },
-            {
-              "proName": "BITSTAMP:ETHUSD",
-              "title": "ETH/USD"
-            },
-            {
-              "description": "GameStop",
-              "proName": "NYSE:GME"
-            },
-            {
-              "description": "AMC",
-              "proName": "NYSE:AMC"
-            },
-            {
-              "description": "Tesla",
-              "proName": "NASDAQ:TSLA"
-            }
-          ],
-            "showSymbolLogo": true,
-              "colorTheme": "dark",
-                "isTransparent": true,
-                  "displayMode": "adaptive",
-                    "locale": "en"
-        }
-      </script>
-  </div>
-  <!-- TradingView Widget END -->
+  </nav>
+  <container id="ticker-tape">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async>
+          {
+            "symbols": [
+              {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+              },
+              {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "Nasdaq 100"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "BTC/USD"
+              },
+              {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "ETH/USD"
+              },
+              {
+                "description": "GameStop",
+                "proName": "NYSE:GME"
+              },
+              {
+                "description": "AMC",
+                "proName": "NYSE:AMC"
+              },
+              {
+                "description": "Tesla",
+                "proName": "NASDAQ:TSLA"
+              }
+            ],
+              "showSymbolLogo": true,
+                "colorTheme": "dark",
+                  "isTransparent": true,
+                    "displayMode": "adaptive",
+                      "locale": "en"
+          }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </container>
 
   <div id="home">
     <img src="images/stock-chart.jpeg">
@@ -92,17 +94,18 @@
     <form>
       <div class="wrapper">
         <input type="search" id="search" placeholder="Search for stonks" type="text">
-        <button id="search-button" type="submit">Search<button>
+        <button id="search-button" type="submit">Search</button>
       </div>
     </form>
-    <section id="stonkresults" class="stonk-results">
-      <div>
-        <canvas id="chart"></canvas>
-      </div>
+    <div id="andrew">
+      <section id="stonkresults" class="stonk-results">
+    </div>
+    <!-- <div>
+      <canvas id="chart"></canvas>
+    </div> -->
     </section>
   </main>
   <script src="navscript.js"></script>
-  <script src="chart.js"></script>
 </body>
 
 </html>

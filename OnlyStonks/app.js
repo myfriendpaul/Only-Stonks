@@ -1,4 +1,5 @@
 
+
 // API http://api.marketstack.com/v1/tickers?access_key=b9a441095845496dd1fb8777012283f3
 
 const stonkResults = document.querySelector('.stonk-results')
@@ -27,28 +28,28 @@ async function getTickerData(e) {
 
     const open = response.data.data.eod[0].open
     const openElement = document.createElement('p')
-    openElement.textContent = `Open: ${open}`
+    openElement.textContent = `Open: $${open}`
     // console.log(openElement)
     openElement.classList.add('open-style')
     stonkDiv.appendChild(openElement)
 
     const close = response.data.data.eod[0].close
     const closeElement = document.createElement('p')
-    closeElement.textContent = `Close: ${close}`
+    closeElement.textContent = `Close: $${close}`
     // console.log(closeElement)
     closeElement.classList.add('close-style')
     stonkDiv.appendChild(closeElement)
 
     const high = response.data.data.eod[0].high
     const highElement = document.createElement('p')
-    highElement.textContent = `High: ${high}`
+    highElement.textContent = `High: $${high}`
     // console.log(highElement)
     highElement.classList.add('high-style')
     stonkDiv.appendChild(highElement)
 
     const low = response.data.data.eod[0].low
     const lowElement = document.createElement('p')
-    lowElement.textContent = `Low: ${low}`
+    lowElement.textContent = `Low: $${low}`
     // console.log(lowElement)
     lowElement.classList.add('low-style')
     stonkDiv.appendChild(lowElement)

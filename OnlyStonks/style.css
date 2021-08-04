@@ -30,6 +30,7 @@ body {
 img {
   width: 100%;
   height: auto;
+  z-index: 0;
 }
 
 *{
@@ -37,6 +38,8 @@ img {
   padding: 0px;
   box-sizing: 0px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 
@@ -52,6 +55,16 @@ nav {
   min-height: 8vh;
   max-width: auto;
   background-color: #171B26;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+#ticker-tape {
+  position: fixed;
+  top: 8vh;
+  width: 100%;
 }
 
 ul{
@@ -61,7 +74,7 @@ ul{
 #nav-title{
   display: flex;
   justify-items: left;
-  position: relative;
+
 
 
 }
@@ -70,14 +83,14 @@ ul{
   font-family: 'gotham', sans-serif;
   font-weight: 400;
   font-size: 4em;
-  padding: 25px 2px 0 0;
+  padding: 25px 0 0 0;
   color: #42D9C8
   
 }
 
 #stonks-title{
   font-family: 'marguerite1', sans-serif;
-  padding: 35px 0 0 0;
+  padding: 32px 0 0 10px;
   font-weight: 400;
   font-size: 4em;
   color: #931621
@@ -125,18 +138,24 @@ ul{
 
 #search {
   display: flex;
-  text-align: center;
+  /* text-align: center; */
   color: #EB4A4C;
   size: 40px;
   border: 1px solid #9f9f92;
   border-radius: 50px;
   height: 3vh;
   width: 30vw;
-  /* padding: 2px 2px 2px 20px; */
+  padding: 2px 2px 2px 20px;
   outline: 0;
   background-color: #ababab;
   
   
+}
+
+::placeholder{
+  color:#931621;
+  opacity: 1;
+  font-weight: 600;
 }
 
 #search-button {
@@ -165,6 +184,11 @@ section {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   overflow: hidden;
   margin-top: 10px; */
+}
+
+#andrew{
+  display: flex;
+  justify-content: center;
 }
 
 .stonk-results {
@@ -198,14 +222,15 @@ section {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 3vh;
-  color: #1BA59A;
+  color: #1ba565;
+
  }
 
  .low-style{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 3vh;
-  color: #1BA59A;
+  color: #880b15bf;
  }
 
  .volume-style{
