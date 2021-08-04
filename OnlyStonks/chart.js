@@ -1,13 +1,13 @@
-async function getTickerDataYear(e) {
-  try {
-    e.preventDefault()
-    let { search } = e.target
-    let response = await axios.get(`http://api.marketstack.com/v1/tickers/${search.value}/eod?access_key=b9a441095845496dd1fb8777012283f3`)
-    const tickerData2 = response.data.data.eod
-  } catch (error) {
-  }
-}
-var chart = LightweightCharts.createChart(document.body, {
+// async function getTickerDataYear(e) {
+//   try {
+//     e.preventDefault()
+//     let { search } = e.target
+//     let response = await axios.get(`http://api.marketstack.com/v1/tickers/${search.value}/eod?access_key=b9a441095845496dd1fb8777012283f3`)
+//     const tickerData2 = response.data.data.eod
+//   } catch (error) {
+//   }
+// }
+var chart = LightweightCharts.createChart(document.getElementById('chart'), {
   width: 600,
   height: 300,
   layout: {
@@ -50,11 +50,11 @@ async function getTickerDataYear(e) {
     const tickerData2 = response.data.data.eod.high
     const tickerData3 = response.data.data.eod.low
     console.log(tickerData3)
-    // candleSeries.setData(Object.entries(tickerData2, tickerData3))
+
   } catch (error) {
   }
 }
-
+candleSeries.setData()
 
 
 
