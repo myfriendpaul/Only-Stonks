@@ -1,5 +1,6 @@
 const stonkResults = document.querySelector('.stonk-results')
 
+// API request function that appends selected info to page
 
 async function getTickerData(e) {
   removeElement(stonkResults)
@@ -14,37 +15,37 @@ async function getTickerData(e) {
     const stonkDiv = document.createElement('div')
     stonkResults.appendChild(stonkDiv)
 
-    const symbol = response.data.data.eod[0].symbol
+    const symbol = tickerData.symbol
     const symbolElement = document.createElement('h2')
     symbolElement.textContent = `${symbol}`
     symbolElement.classList.add('symbol-style')
     stonkDiv.appendChild(symbolElement)
 
-    const open = response.data.data.eod[0].open
+    const open = tickerData.open
     const openElement = document.createElement('p')
     openElement.textContent = `Open: $${open}`
     openElement.classList.add('open-style')
     stonkDiv.appendChild(openElement)
 
-    const close = response.data.data.eod[0].close
+    const close = tickerData.close
     const closeElement = document.createElement('p')
     closeElement.textContent = `Close: $${close}`
     closeElement.classList.add('close-style')
     stonkDiv.appendChild(closeElement)
 
-    const high = response.data.data.eod[0].high
+    const high = tickerData.high
     const highElement = document.createElement('p')
     highElement.textContent = `High: $${high}`
     highElement.classList.add('high-style')
     stonkDiv.appendChild(highElement)
 
-    const low = response.data.data.eod[0].low
+    const low = tickerData.low
     const lowElement = document.createElement('p')
     lowElement.textContent = `Low: $${low}`
     lowElement.classList.add('low-style')
     stonkDiv.appendChild(lowElement)
 
-    const volume = response.data.data.eod[0].volume
+    const volume = tickerData.volume
     const volumeElement = document.createElement('p')
     volumeElement.textContent = `Volume: ${volume}`
     volumeElement.classList.add('volume-style')
@@ -66,6 +67,7 @@ function removeElement(element) {
   }
 }
 
+//This function grabs the data from API request, parses data into a format that Lightweight Charts can use to generate data on chart for the last 100 days
 
 function displayChart(tickerData) {
   removeElement(document.querySelector('#chart'))
