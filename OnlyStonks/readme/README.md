@@ -2,7 +2,7 @@
 
 ## Project Name
 
-OnlyStonks
+[OnlyStonks](https://onlystonks.surge.sh/)
 
 ## Project Description
 
