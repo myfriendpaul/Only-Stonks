@@ -83,23 +83,19 @@ User is able to search different companies traded on the stock exchange and add 
 
     function displayChart(tickerData) {
 
-removeElement(document.querySelector('#chart'))
-let timeData = tickerData
-.map((ticker) => {
-return {
-time: ticker.date.split("T")[0],
-open: parseFloat(ticker.open.toFixed(2)),
-high: parseFloat(ticker.high.toFixed(2)),
-low: parseFloat(ticker.low.toFixed(2)),
-close: parseFloat(ticker.close.toFixed(2)),
-};
-})
-.reverse();
+    removeElement(document.querySelector('#chart'))
+    let timeData = tickerData
+    .map((ticker) => {
+    return {
+    time: ticker.date.split("T")[0],
+    open: parseFloat(ticker.open.toFixed(2)),
+    high: parseFloat(ticker.high.toFixed(2)),
+    low: parseFloat(ticker.low.toFixed(2)),
+    close: parseFloat(ticker.close.toFixed(2)),
+    };
+    })
+    .reverse();
 
 ## Change Log
 
 Moved Favorites Page from MVP to Post MVP
-
-```
-
-```
