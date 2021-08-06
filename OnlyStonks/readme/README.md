@@ -48,7 +48,6 @@ User is able to search different companies traded on the stock exchange and add 
 
 - Favorite page that allows user to save tickers 
 - Display static historical chart using Chart.js or d3js
-- "Todays top gainers/losers" on sidebar 
 - Use second API to get and display financial news related to stock
 
 
@@ -56,11 +55,11 @@ User is able to search different companies traded on the stock exchange and add 
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 2| Project Approval / Core Application Structure (HTML and CSS| Incomplete
-|August 3| Pseudocode / Learn Chart.js or D3js / Code | Incomplete
-|August 4| Initial Clickable Model /  Code  | Incomplete
-|August 5| MVP / Post MVP | Incomplete
+|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|August 2| Project Approval / Core Application Structure (HTML and CSS| Complete
+|August 3| Pseudocode / Learn Chart.js or D3js / Code | Complete
+|August 4| Initial Clickable Model /  Code  | Complete
+|August 5| MVP / Post MVP | Complete
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
@@ -78,10 +77,10 @@ User is able to search different companies traded on the stock exchange and add 
 | Create Graphs | M | 6hrs| 12hrs | 12hrs |
 | Ticker Tape Scroll | L | 3hrs| .5hrs | .5hrs |
 | Remove previous search | H | 1hrs| .5hrs | .5hrs |
-| Style and CSS | H | 8hrs| 8hrs | 8hrs |
+| Style and CSS | H | 8hrs| 8hrs | 12hrs |
 
 
-| Total |  | 36hrs| 41hrs | 41hrs |
+| Total |  | 36hrs| 41hrs | 43hrs |
 
 ## Code Snippet
 

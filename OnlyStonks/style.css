@@ -1,30 +1,28 @@
 @font-face {
-  font-family: 'gothamlight';
-  src: url('fonts/gotham-font/gotham_light_regular-webfont.woff2') format('woff2'),
-       url('fonts/gotham-font/gotham_light_regular-webfont.woff') format('woff');
+  font-family: "gothamlight";
+  src: url("fonts/gotham-font/gotham_light_regular-webfont.woff2")
+      format("woff2"),
+    url("fonts/gotham-font/gotham_light_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
-
-@font-face { 
-  font-family: 'gothambold';
-  src: url('fonts/Gotham-Font/gotham-bold-webfont.woff2') format('woff2'),
-     url('fonts/Gotham-Font/gotham_light_regular-webfont.woff') format('woff');
-font-weight: lighter;
-font-style: normal;
-
-}
-
 
 @font-face {
-  font-family: 'Marguerite1';
-  src:url('fonts/marguerite-font/Marguerite1.ttf.woff') format('woff');
+  font-family: "gothambold";
+  src: url("fonts/Gotham-Font/gotham-bold-webfont.woff2") format("woff2"),
+    url("fonts/Gotham-Font/gotham_light_regular-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marguerite1";
+  src: url("fonts/marguerite-font/Marguerite1.ttf.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  background-color: #171B26;
+  background-color: #171b26;
 }
 
 img {
@@ -33,15 +31,13 @@ img {
   z-index: 0;
 }
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: 0px;
   scroll-behavior: smooth;
   overflow-x: hidden;
-
 }
-
 
 form {
   display: flex;
@@ -54,48 +50,35 @@ nav {
   align-items: center;
   min-height: 8vh;
   max-width: auto;
-  background-color: #171B26;
-  position: fixed;
+  background-color: #171b26;
   top: 0;
   width: 100%;
-
 }
 
-#ticker-tape {
-  position: fixed;
-  top: 8vh;
-  width: 100%;
-}
-
-ul{
+ul {
   list-style: none;
 }
 
-#nav-title{
+#nav-title {
   display: flex;
   justify-items: left;
-
-
-
 }
 
 #only-title {
-  font-family: 'gotham', sans-serif;
+  font-family: "gotham", sans-serif;
   font-weight: 400;
   font-size: 4em;
   padding: 25px 0 0 0;
-  color: #42D9C8
-  
+  color: #42d9c8;
 }
 
-#stonks-title{
-  font-family: 'marguerite1', sans-serif;
+#stonks-title {
+  font-family: "marguerite1", sans-serif;
   padding: 32px 0 0 10px;
   font-weight: 400;
   font-size: 4em;
-  color: #931621
+  color: #931621;
 }
-
 
 .nav-links {
   display: flex;
@@ -103,43 +86,38 @@ ul{
   width: 35%;
 }
 
-.nav-links a{
+.nav-links a {
   color: #931621;
   text-decoration: none;
   letter-spacing: 2px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
-
 
 .burger {
   display: none;
   cursor: pointer;
 }
 
-.burger div{
+.burger div {
   width: 25px;
   height: 3px;
-  background-color: #42D9C8;
+  background-color: #42d9c8;
   margin: 5px;
-
 }
-
 
 .wrapper {
   display: flex;
   min-width: 100px;
   max-width: 1000px;
   justify-content: center;
-  /* flex-direction: row; */
-
 }
 
 #search {
   display: flex;
   /* text-align: center; */
-  color: #EB4A4C;
+  color: #eb4a4c;
   size: 40px;
   border: 1px solid #9f9f92;
   border-radius: 50px;
@@ -148,45 +126,36 @@ ul{
   padding: 2px 2px 2px 20px;
   outline: 0;
   background-color: #ababab;
-  
-  
 }
 
-::placeholder{
-  color:#931621;
+::placeholder {
+  color: #931621;
   opacity: 1;
   font-weight: 600;
 }
 
 #search-button {
   background: none;
-  color: #1BA59A;
-  font-family: 'Montserrat', sans-serif;
+  color: #1ba59a;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
   border: none;
   padding: 10px;
   border-radius: 10px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 400px;
-  height: 330px;
-
-  /* box-shadow: 20px 20px 50px rgba(255, 255, 255, .03);
-  border-radius: 15px;
-  background: rgba(40, 70, 75, 0.01);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  margin-top: 10px; */
+  width: 500px;
+  height: 500px;
+  margin-top: 8vh;
 }
 
-#andrew{
+#andrew {
   display: flex;
   justify-content: center;
 }
@@ -195,58 +164,57 @@ section {
   display: flex;
   text-align: center;
   justify-content: center;
- }
+}
 
- .symbol-style {
-  font-family: 'Montserrat', sans-serif;
+.symbol-style {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 5vh;
-  color: #1BA59A;
- }
+  font-size: 5vw;
+  color: #1ba59a;
+}
 
- .open-style{
-  font-family: 'Montserrat', sans-serif;
+.open-style {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
-  color: #1BA59A;
- }
+  font-size: 3vw;
+  color: #1ba59a;
+}
 
- .close-style{
-  font-family: 'Montserrat', sans-serif;
+.close-style {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
-  color: #1BA59A;
- }
+  font-size: 3vw;
+  color: #1ba59a;
+}
 
- .high-style{
-  font-family: 'Montserrat', sans-serif;
+.high-style {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 3vw;
   color: #1ba565;
+}
 
- }
-
- .low-style{
-  font-family: 'Montserrat', sans-serif;
+.low-style {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 3vw;
   color: #880b15bf;
- }
+}
 
- .volume-style{
-  font-family: 'Montserrat', sans-serif;
+.volume-style {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
-  color: #1BA59A;
- }
+  font-size: 3vw;
+  color: #1ba59a;
+}
 
-#chart{
+#chart {
   display: flex;
   padding: 20px 0 0 130vw;
   position: relative;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .nav-links {
     display: flex;
     justify-content: space-around;
@@ -254,10 +222,101 @@ section {
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
+
+  img {
+    width: 100%;
+    height: 30vh;
+    z-index: 0;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 400px;
+  }
+
+  .stonk-results {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 8vh;
+  }
+
+  #search {
+    display: flex;
+    /* text-align: center; */
+    color: #eb4a4c;
+    size: 40px;
+    border: 1px solid #9f9f92;
+    border-radius: 50px;
+    height: 3vh;
+    width: 60vw;
+    margin-top: 10vh;
+    padding: 2px 2px 2px 20px;
+    outline: 0;
+    background-color: #ababab;
+  }
+  #search-button {
+    background: none;
+    color: #1ba59a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    margin-top: 9.7vh;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .symbol-style {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 8vw;
+    color: #1ba59a;
+  }
+
+  .open-style {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 6vw;
+    color: #1ba59a;
+  }
+
+  .close-style {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 6vw;
+    color: #1ba59a;
+  }
+
+  .high-style {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 6vw;
+    color: #1ba565;
+  }
+
+  .low-style {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 6vw;
+    color: #880b15bf;
+  }
+
+  .volume-style {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 6vw;
+    color: #1ba59a;
+  }
+
   .nav-links {
     z-index: 1;
     position: absolute;
@@ -267,7 +326,7 @@ section {
     height: 92vh;
     width: 35%;
     top: 8vh;
-    background-color: #28464B;
+    background-color: #28464b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,17 +345,15 @@ section {
 
 .nav-active {
   transform: translateX(0%);
-} 
-
-@keyframes navLinkFade{
-  from{
-    opacity: 0;
-    transform: translateX(50px)
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px)
-  }
 }
 
-
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
