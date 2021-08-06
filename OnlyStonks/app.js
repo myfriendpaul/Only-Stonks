@@ -50,7 +50,7 @@ async function getTickerData(e) {
     volumeElement.classList.add('volume-style')
     stonkDiv.appendChild(volumeElement)
 
-
+    displayChart(tickerDataYear)
   } catch (error) {
     console.error(error)
   }
@@ -64,4 +64,58 @@ function removeElement(element) {
   while (element.lastChild) {
     element.removeChild(element.lastChild)
   }
+}
+
+
+function displayChart(tickerData) {
+  removeElement(document.querySelector('#chart'))
+  let timeData = tickerData
+    .map((ticker) => {
+      return {
+        time: ticker.date.split("T")[0],
+        open: parseFloat(ticker.open.toFixed(2)),
+        high: parseFloat(ticker.high.toFixed(2)),
+        low: parseFloat(ticker.low.toFixed(2)),
+        close: parseFloat(ticker.close.toFixed(2)),
+      };
+    })
+    .reverse();
+
+  let chart = LightweightCharts.createChart(document.querySelector("#chart"), {
+    width: 600,
+    height: 300,
+    layout: {
+      backgroundColor: "#171b26",
+      textColor: "rgba(255, 255, 255, 0.9)",
+    },
+    grid: {
+      vertLines: {
+        color: "rgba(197, 203, 206, 0.5)",
+      },
+      horzLines: {
+        color: "rgba(197, 203, 206, 0.5)",
+      },
+    },
+    crosshair: {
+      mode: LightweightCharts.CrosshairMode.Normal,
+    },
+    priceScale: {
+      borderColor: "rgba(197, 203, 206, 0.8)",
+    },
+    timeScale: {
+      borderColor: "rgba(197, 203, 206, 0.8)",
+    },
+  });
+
+  let candleSeries = chart.addCandlestickSeries({
+    upColor: "#1ba59a",
+    downColor: "#931621",
+    borderDownColor: "#931621",
+    borderUpColor: "#1ba59a",
+    wickDownColor: "#931621",
+    wickUpColor: "#1ba59a",
+  });
+
+  candleSeries.setData(timeData);
+
 }
