@@ -1,23 +1,23 @@
 @font-face {
   font-family: "gothamlight";
-  src: url("fonts/gotham-font/gotham_light_regular-webfont.woff2")
+  src: url("./fonts/gotham-font/gotham_light_regular-webfont.woff2")
       format("woff2"),
-    url("fonts/gotham-font/gotham_light_regular-webfont.woff") format("woff");
+    url("./fonts/gotham-font/gotham_light_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "gothambold";
-  src: url("fonts/Gotham-Font/gotham-bold-webfont.woff2") format("woff2"),
-    url("fonts/Gotham-Font/gotham_light_regular-webfont.woff") format("woff");
+  src: url("./fonts/Gotham-Font/gotham-bold-webfont.woff2") format("woff2"),
+    url("./fonts/Gotham-Font/gotham_light_regular-webfont.woff") format("woff");
   font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Marguerite1";
-  src: url("fonts/marguerite-font/Marguerite1.ttf.woff") format("woff");
+  src: url("./fonts/marguerite-font/Marguerite1.ttf.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -147,7 +147,11 @@ ul {
   cursor: pointer;
 }
 
-section {
+main {
+  overflow-y: hidden;
+}
+
+main section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -264,7 +268,6 @@ section {
 
   #search {
     display: flex;
-    /* text-align: center; */
     color: #eb4a4c;
     size: 40px;
     border: 1px solid #9f9f92;
